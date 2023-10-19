@@ -24,12 +24,12 @@ const HeroSections = () => {
         onSlideChange={() => ('')}
       >
        
-        <SwiperSlide><img src=" https://i.ibb.co/qxgDnKG/banner-3.jpg" alt="" style={{width:"100%", height:"500px"}} />
+        <SwiperSlide><img src=" https://i.ibb.co/30SvTtw/Cover-Adds1.jpg" alt="" style={{width:"100%", height:"500px"}} />
         </SwiperSlide>
        
-        <SwiperSlide><img src="https://i.ibb.co/Pr82bLg/Banner-2.jpg" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+        <SwiperSlide><img src="https://i.ibb.co/FWPb7kh/banner-adds-2.webp" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
 
-        <SwiperSlide><img src="https://i.ibb.co/hCnt6cV/Banner-Cover.jpg" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+        <SwiperSlide><img src="https://i.ibb.co/5G8QNxt/banner-adds-3.webp" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
    
       </Swiper>
     );

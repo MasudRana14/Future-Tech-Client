@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
 
-
     return (
 
         <div className="max-w-7xl mx-auto">
@@ -49,6 +48,7 @@ const Home = () => {
 
                     </Link>
                     {/* Card 2  */}
+                    
                     <Link to="/apple">
                     
                     
@@ -102,11 +102,11 @@ const Home = () => {
                     {/* Card 6 */}
                     <div className="card w-96  bg-gray-300 shadow-xl">
                         <figure className="p-2">
-                            <img src="https://i.ibb.co/X8gGnZV/Sony.webp" alt="Shoes" className="rounded-xl" />
+                            <img src="https://i.ibb.co/cbn969Z/Asus.jpg" alt="Shoes" className="rounded-xl" />
                         </figure>
 
                         <div>
-                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Sony</h1>
+                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Asus</h1>
                         </div>
 
                     </div>

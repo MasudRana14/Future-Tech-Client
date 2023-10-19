@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import AppleProduct from "./AppleProduct";
+import HeroSections from "../../HeroSection/HeroSections";
 
 
 const Apple = () => {
@@ -11,6 +12,10 @@ const Apple = () => {
     return (
 
         <div>
+             <div className="mt-2">
+             <HeroSections></HeroSections>
+             </div>
+
 
             <h1 className="text-center text-3xl font-bold mt-10"> Apple Brand Products</h1>
 

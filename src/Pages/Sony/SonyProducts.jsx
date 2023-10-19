@@ -1,14 +1,11 @@
 
 
-const AppleProduct = ({ apple }) => {
+const SonyProducts = ({ sony }) => {
 
-
-    const { photo, name, brand, category, price, rating, description } = apple;
+    const { photo, name, brand, category, price, rating, description } = sony;
 
     return (
         <div>
-
-    
             <div className=" ">
 
                 <div className=" gap-5">
@@ -39,4 +36,4 @@ const AppleProduct = ({ apple }) => {
     );
 };
 
-export default AppleProduct;
+export default SonyProducts;
