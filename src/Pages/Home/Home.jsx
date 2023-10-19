@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 
@@ -27,10 +28,12 @@ const Home = () => {
 
             <div className="mb-12 mt-12">
 
-                <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">Our Brand <span className="text-cyan-500">Product</span></h1>
+                <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">Our Trusted  <span className="text-cyan-500">Brand</span></h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
                     {/* Card 1  */}
+                    <Link to="/sony">
+
                     <div className="card w-96  bg-gray-300 shadow-xl">
                         <figure className="p-2">
                             <img src="https://i.ibb.co/X8gGnZV/Sony.webp" alt="Shoes" className="rounded-xl" />
@@ -41,7 +44,14 @@ const Home = () => {
                         </div>
 
                     </div>
+
+
+
+                    </Link>
                     {/* Card 2  */}
+                    <Link to="/apple">
+                    
+                    
                     <div className="card w-96  bg-gray-300 shadow-xl">
                         <figure className="p-2">
                             <img src="https://i.ibb.co/qjqC8Pk/Apple.jpg" alt="Shoes" className="rounded-xl" />
@@ -52,6 +62,10 @@ const Home = () => {
                         </div>
 
                     </div>
+                    
+                    
+                    
+                    </Link>
                     {/* Card 3 */}
                     <div className="card w-96  bg-gray-300 shadow-xl">
                         <figure className="p-2">

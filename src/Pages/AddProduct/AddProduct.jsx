@@ -39,6 +39,9 @@ const AddProduct = () => {
     return (
         <div className=" ">
 
+
+            
+
             <h1 className="text-3xl text-center mt-6 font-bold">Add <span className='text-pink-400'>Product</span></h1>
             <hr className='w-2/6 mx-auto' />
 

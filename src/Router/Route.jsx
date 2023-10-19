@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import Apple from "../Pages/Apple/Apple";
 
 
 const myRoute = createBrowserRouter([
@@ -35,6 +36,12 @@ const myRoute = createBrowserRouter([
             {
                 path: "/register",
                 element:<Register></Register>
+            },
+            {
+                path:"/apple",
+                element:<Apple></Apple>,
+                loader:()=> fetch('http://localhost:5000/products')
+
             }
         ]
     },
