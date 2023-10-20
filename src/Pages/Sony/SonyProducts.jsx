@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const SonyProducts = ({ sonys }) => {
 
@@ -35,5 +35,10 @@ const SonyProducts = ({ sonys }) => {
         </div>
     );
 };
+
+SonyProducts.propTypes = {
+sonys:PropTypes.object.isRequired
+}
+
 
 export default SonyProducts;

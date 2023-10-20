@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
-import HeroSections from "../../HeroSection/HeroSections";
 import SamsungProducts from "./SamsungProducts";
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 const Samsung = () => {
 
@@ -19,7 +28,26 @@ const Samsung = () => {
 
         <div>
             <div className="mt-2">
-                <HeroSections></HeroSections>
+                <Swiper
+
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                    onSwiper={(Swiper) => ('')}
+                    onSlideChange={() => ('')}
+                >
+
+                    <SwiperSlide><img src="https://i.ibb.co/svjC6Gw/Samsung-Love-Galaxy.webp" alt="" style={{ width: "100%", height: "500px" }} />
+                    </SwiperSlide>
+
+                    <SwiperSlide><img src="https://i.ibb.co/1vbD56B/samsung-adds-2.jpg" alt="" style={{ width: "100%", height: "500px" }} /></SwiperSlide>
+
+                    <SwiperSlide><img src="https://i.ibb.co/3sg4Wy9/samsung-adds.webp" alt="" style={{ width: "100%", height: "500px" }} /></SwiperSlide>
+
+                </Swiper>
             </div>
 
 

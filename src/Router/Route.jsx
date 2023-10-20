@@ -16,6 +16,8 @@ import Intel from "../Pages/Intel/Intel";
 import Asus from "../Pages/Asus/Asus";
 
 
+
+
 const myRoute = createBrowserRouter([
 
     {
@@ -54,7 +56,8 @@ const myRoute = createBrowserRouter([
             },
             {
                 path: "/sony",
-                element: <Sony></Sony>
+                element: <Sony></Sony>,
+                
                 
             },
             {
@@ -72,7 +75,9 @@ const myRoute = createBrowserRouter([
             {
                 path:"/asus",
                 element:<Asus></Asus>
-            }
+            },
+           
+           
         ]
     },
 

@@ -1,6 +1,15 @@
 import { useEffect, useState } from "react";
-import HeroSections from "../../HeroSection/HeroSections";
 import AsusProduct from "./AsusProduct";
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 const Asus = () => {
 
@@ -18,8 +27,28 @@ const Asus = () => {
     return (
 
         <div>
+
             <div className="mt-2">
-                <HeroSections></HeroSections>
+                <Swiper
+
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                    onSwiper={(Swiper) => ('')}
+                    onSlideChange={() => ('')}
+                >
+
+                    <SwiperSlide><img src=" https://i.ibb.co/GJdr9yz/Asus-Phone-Adds.jpg" alt="" style={{ width: "100%", height: "500px" }} />
+                    </SwiperSlide>
+
+                    <SwiperSlide><img src="https://i.ibb.co/P5Hbqdj/EO8.jpg" alt="" style={{ width: "100%", height: "500px" }} /></SwiperSlide>
+
+                    <SwiperSlide><img src="https://i.ibb.co/N1xTDBg/Asus-banner.png" alt="" style={{ width: "100%", height: "500px" }} /></SwiperSlide>
+
+                </Swiper>
             </div>
 
 

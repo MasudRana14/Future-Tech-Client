@@ -7,19 +7,19 @@ const Home = () => {
 
     return (
 
-        <div className="max-w-7xl mx-auto bg-pink-100">
+        <div className="max-w-7xl mx-auto ">
 
 
             <div className="mt-2">
 
-                <div className="hero h-96" style={{ backgroundImage: 'url(https://i.ibb.co/tbq5P01/banner-cover.webp)' }}>
-                    <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero h-32 md:h-[400px] lg:h-[450px]" style={{ backgroundImage: 'url(https://i.ibb.co/q7DR2Pb/E-commerce-banner-3.jpg)' }}>
+                    <div className="hero-overlay bg-opacity-20"></div>
                     <div className="hero-content  text-neutral-content">
-                        <div className="">
-                            <h1 className="mb-5 text-5xl font-bold">Welcome to Future Tech</h1>
-                            <p className="mb-5 text-lg font-medium">your gateway to the forefront of innovation and the future of technology. <br />Step into a world where imagination meets reality, where the boundaries <br />of whats possible are constantly pushed.</p>
+                        {/* <div className="">
+                            <h1 className="mb-5 text-3xl md:text-4xl lg:text-5xl font-bold text-pink-500 ">Welcome to <br /> <span className="text-green-700">Future Tech</span></h1>
+                            <p className="mb-5 lg:text-2xl md:text-lg font-medium text-black">your gateway to the forefront of innovation and the future of technology. <br />Step into a world where imagination meets reality, where the boundaries <br />of whats possible are constantly pushed.</p>
 
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -29,11 +29,11 @@ const Home = () => {
 
                 <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">Our Trusted  <span className="text-cyan-500">Brand</span></h1>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {/* Card 1  */}
                     <Link to="/sony">
 
-                        <div className="card w-96  bg-gray-300 shadow-xl">
+                        <div className="card lg:w-96  bg-gray-300 shadow-xl mx-auto">
                             <figure className="p-2">
                                 <img src="https://i.ibb.co/X8gGnZV/Sony.webp" alt="Shoes" className="rounded-xl" />
                             </figure>
@@ -52,7 +52,7 @@ const Home = () => {
                     <Link to="/apple">
 
 
-                        <div className="card w-96  bg-gray-300 shadow-xl">
+                        <div className="card lg:w-96  bg-gray-300 shadow-xl mx-auto">
                             <figure className="p-2">
                                 <img src="https://i.ibb.co/qjqC8Pk/Apple.jpg" alt="Shoes" className="rounded-xl" />
                             </figure>
@@ -69,7 +69,7 @@ const Home = () => {
                     {/* Card 3 */}
                     <Link to="/samsung">
 
-                        <div className="card w-96  bg-gray-300 shadow-xl">
+                        <div className="card lg:w-96  bg-gray-300 shadow-xl mx-auto">
                             <figure className="p-2">
                                 <img src="https://i.ibb.co/6XSXYYL/Samsung.jpg" alt="Shoes" className="rounded-xl" />
                             </figure>
@@ -84,7 +84,7 @@ const Home = () => {
                     </Link>
                     {/* Card 4 */}
                     <Link to="/google">
-                        <div className="card w-96  bg-gray-300 shadow-xl">
+                        <div className="card lg:w-96  bg-gray-300 shadow-xl mx-auto">
                             <figure className="p-2">
                                 <img src="https://i.ibb.co/BG43y7B/Google.jpg" alt="Shoes" className="rounded-xl" />
                             </figure>
@@ -99,7 +99,7 @@ const Home = () => {
                     {/* Card 5 */}
                     <Link to="/intel">
 
-                        <div className="card w-96  bg-gray-300 shadow-xl">
+                        <div className="card lg:w-96  bg-gray-300 shadow-xl mx-auto">
                             <figure className="p-2">
                                 <img src="https://i.ibb.co/7v9Fhrh/Intel.jpg" alt="Shoes" className="rounded-xl" />
                             </figure>
@@ -114,7 +114,7 @@ const Home = () => {
                     {/* Card 6 */}
                     <Link to="/asus">
 
-                        <div className="card w-96  bg-gray-300 shadow-xl">
+                        <div className="card lg:w-96  bg-gray-300 shadow-xl mx-auto">
                             <figure className="p-2">
                                 <img src="https://i.ibb.co/cbn969Z/Asus.jpg" alt="Shoes" className="rounded-xl" />
                             </figure>

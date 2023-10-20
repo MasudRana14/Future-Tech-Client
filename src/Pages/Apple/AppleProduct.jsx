@@ -1,10 +1,11 @@
 
+import { Link } from 'react-router-dom';
 
 const AppleProduct = ({ apples }) => {
 
     
 
-    const { photo, name, brand, category, price, rating, description } = apples;
+    const {_id, photo, name, brand, category, price, rating, description } = apples;
 
     return (
         <div>
@@ -27,6 +28,7 @@ const AppleProduct = ({ apples }) => {
                                 <button className="btn btn-sm bg-cyan-400 hover:bg-pink-400 ">Update</button>
 
                                 <button className="btn btn-sm bg-pink-400 hover:bg-cyan-400 ">Details</button>
+                               
                             </div>
                         </div>
                     </div>
@@ -39,5 +41,6 @@ const AppleProduct = ({ apples }) => {
         </div>
     );
 };
+
 
 export default AppleProduct;

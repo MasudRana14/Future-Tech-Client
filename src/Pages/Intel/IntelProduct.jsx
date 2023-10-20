@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const IntelProduct = ({ intel }) => {
 
@@ -37,5 +37,9 @@ const IntelProduct = ({ intel }) => {
         </div>
     );
 };
+
+IntelProduct.propTypes = {
+intel:PropTypes.object.isRequired
+}
 
 export default IntelProduct;

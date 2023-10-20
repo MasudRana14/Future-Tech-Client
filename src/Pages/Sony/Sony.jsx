@@ -1,13 +1,19 @@
 
 import { useEffect, useState } from "react";
 import SonyProducts from "./SonyProducts";
-import HeroSections from "../../HeroSection/HeroSections";
+
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 const Sony = () => {
-
-
-
-
 
     const [sonyBrand, setSonyBrand] = useState([])
 
@@ -19,14 +25,30 @@ const Sony = () => {
     }, [])
 
 
-
-
-
     return (
         <div>
 
             <div className="mt-2">
-                <HeroSections></HeroSections>
+            <Swiper
+       
+       modules={[Navigation, Pagination, Scrollbar, A11y]}
+       spaceBetween={50}
+       slidesPerView={1}
+       navigation
+       pagination={{ clickable: true }}
+       scrollbar={{ draggable: true }}
+       onSwiper={(Swiper) => ('')}
+       onSlideChange={() => ('')}
+     >
+      
+       <SwiperSlide><img src="https://i.ibb.co/w7JVsSz/banner-adds-sony.jpg" alt="" style={{width:"100%", height:"500px"}} />
+       </SwiperSlide>
+      
+       <SwiperSlide><img src="https://i.ibb.co/ZVhS4nc/sony-addss.jpg" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+
+       <SwiperSlide><img src="https://i.ibb.co/StwvS5D/sony-slider-adds.jpg" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+  
+     </Swiper>
             </div>
 
             <h1 className="text-center text-3xl font-bold mt-10"> Apple Brand Products</h1>

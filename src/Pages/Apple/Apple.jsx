@@ -1,8 +1,15 @@
 
 import AppleProduct from "./AppleProduct";
-import HeroSections from "../../HeroSection/HeroSections";
 import { useEffect, useState } from "react";
 
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 const Apple = () => {
@@ -10,7 +17,7 @@ const Apple = () => {
 
     const [appleBrands, setApple] = useState([])
 
-    
+
     useEffect(() => {
         fetch('http://localhost:5000/products/Apple')
             .then(res => res.json())
@@ -22,8 +29,29 @@ const Apple = () => {
     return (
 
         <div>
-            <div className="mt-2">
-                <HeroSections></HeroSections>
+
+            {/* Slider  */}
+            <div>
+            <Swiper
+       
+       modules={[Navigation, Pagination, Scrollbar, A11y]}
+       spaceBetween={50}
+       slidesPerView={1}
+       navigation
+       pagination={{ clickable: true }}
+       scrollbar={{ draggable: true }}
+       onSwiper={(swiper) => ('')}
+       onSlideChange={() => ('')}
+     >
+      
+       <SwiperSlide><img src=" https://i.ibb.co/30SvTtw/Cover-Adds1.jpg" alt="" style={{width:"100%", height:"500px"}} />
+       </SwiperSlide>
+      
+       <SwiperSlide><img src="https://i.ibb.co/FWPb7kh/banner-adds-2.webp" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+
+       <SwiperSlide><img src="https://i.ibb.co/5G8QNxt/banner-adds-3.webp" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+  
+     </Swiper>
             </div>
 
 
@@ -32,7 +60,7 @@ const Apple = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12 mb-12 ">
 
                 {
-                    appleBrands.map(apples=> <AppleProduct key={apples._id} apples={apples}></AppleProduct>)
+                    appleBrands.map(apples => <AppleProduct key={apples._id} apples={apples}></AppleProduct>)
                 }
 
             </div>

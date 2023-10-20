@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
-import HeroSections from "../../HeroSection/HeroSections";
 import GoogleProducts from "./GoogleProducts";
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 const Google = () => {
@@ -18,7 +26,26 @@ const Google = () => {
     return (
         <div>
             <div className="mt-2">
-                <HeroSections></HeroSections>
+            <Swiper
+       
+       modules={[Navigation, Pagination, Scrollbar, A11y]}
+       spaceBetween={50}
+       slidesPerView={1}
+       navigation
+       pagination={{ clickable: true }}
+       scrollbar={{ draggable: true }}
+       onSwiper={(Swiper) => ('')}
+       onSlideChange={() => ('')}
+     >
+      
+       <SwiperSlide><img src="https://i.ibb.co/nLTmLjh/Pixel-Watch.webp" alt="" style={{width:"100%", height:"500px"}} />
+       </SwiperSlide>
+      
+       <SwiperSlide><img src="https://i.ibb.co/K0ckh02/hq720.jpg" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+
+       <SwiperSlide><img src="https://i.ibb.co/y5W58QB/screenshot-353.webp" alt="" style={{width:"100%", height:"500px"}} /></SwiperSlide>
+  
+     </Swiper>
             </div>
 
 

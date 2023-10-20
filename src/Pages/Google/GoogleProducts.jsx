@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const GoogleProducts = ({google}) => {
 
@@ -39,5 +39,9 @@ const GoogleProducts = ({google}) => {
 
     );
 };
+
+GoogleProducts.propTypes = {
+google:PropTypes.object.isRequired
+}
 
 export default GoogleProducts;

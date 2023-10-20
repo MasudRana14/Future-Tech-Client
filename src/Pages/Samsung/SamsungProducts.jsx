@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'; 
 
 const SamsungProducts = ({samsung}) => {
 
@@ -38,5 +38,10 @@ const SamsungProducts = ({samsung}) => {
         </div>
     );
 };
+
+SamsungProducts.propTypes = {
+samsung:PropTypes.object.isRequired
+}
+
 
 export default SamsungProducts;

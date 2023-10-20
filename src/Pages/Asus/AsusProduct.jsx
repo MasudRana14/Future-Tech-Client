@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const AsusProduct = ({asus}) => {
 
@@ -41,5 +41,9 @@ const AsusProduct = ({asus}) => {
 
     );
 };
+
+AsusProduct.propTypes = {
+asus: PropTypes.object.isRequired
+}
 
 export default AsusProduct;
