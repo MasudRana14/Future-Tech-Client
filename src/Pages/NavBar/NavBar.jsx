@@ -7,13 +7,13 @@ const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext)
 
-    const handleSignOut = () =>{
-       
+    const handleSignOut = () => {
+
         logOut(
             swal("Good job!", "SignOut Successfully", "success")
         )
-        .then()
-        .catch()
+            .then()
+            .catch()
     }
 
     const navList = <>
@@ -22,10 +22,10 @@ const NavBar = () => {
         <NavLink
             to="/"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-pink-400 underline" : ""
+                isPending ? "pending" : isActive ? "text-cyan-500 underline" : ""
             }
         >
-           <p className="font-bold"> Home</p>
+            <p className="font-bold"> Home</p>
         </NavLink>
 
         {/* Add Product  */}
@@ -33,7 +33,7 @@ const NavBar = () => {
         <NavLink
             to="/product"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-pink-400 underline" : ""
+                isPending ? "pending" : isActive ? "text-cyan-500 underline" : ""
             }
         >
             <p className="font-bold"> Add Product</p>
@@ -44,23 +44,36 @@ const NavBar = () => {
         <NavLink
             to="/mycart"
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-pink-400 underline" : ""
+                isPending ? "pending" : isActive ? "text-cyan-500 underline" : ""
             }
         >
-           <p className="font-bold">My Cart</p>
+            <p className="font-bold">My Cart</p>
         </NavLink>
 
+        {/* About Us  */}
+        <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-cyan-500 underline" : ""
+            }
+        >
+            <p className="font-bold">About US</p>
+        </NavLink>
+
+
+
+
         {
-                user ? "" :  <NavLink
+            user ? "" : <NavLink
                 to="/register"
                 className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-pink-400 underline" : ""
+                    isPending ? "pending" : isActive ? "text-cyan-500 underline" : ""
                 }
             >
                 <p className="font-bold">Register</p>
             </NavLink>
-    
-            }
+
+        }
 
 
 
@@ -69,7 +82,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className="navbar  shadow-md rounded-lg mt-5 px-6 ">
+            <div className="navbar bg-pink-100  shadow-md rounded-lg mt-5 px-6 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -90,9 +103,9 @@ const NavBar = () => {
                     </ul>
                 </div>
                 {
-                    user ?  <div onClick={handleSignOut} className="navbar-end ">
-                    <Link className="font-bold text-white px-2 py-1 rounded-lg hover:bg-cyan-500 bg-pink-500">SignOut</Link>
-                </div>
+                    user ? <div onClick={handleSignOut} className="navbar-end ">
+                        <Link className="font-bold text-white px-2 py-1 rounded-lg hover:bg-cyan-500 bg-pink-500">SignOut</Link>
+                    </div>
                         :
                         <div className="navbar-end">
                             <Link className="font-bold text-white px-2 py-1 rounded-lg hover:bg-cyan-500 bg-pink-500" to="/login">Login</Link>

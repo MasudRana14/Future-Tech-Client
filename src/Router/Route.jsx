@@ -9,18 +9,23 @@ import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Apple from "../Pages/Apple/Apple";
 import Sony from "../Pages/Sony/Sony";
+import AboutUs from "../Pages/AboutUs/AboutUs";
+import Samsung from "../Pages/Samsung/Samsung";
+import Google from "../Pages/Google/Google";
+import Intel from "../Pages/Intel/Intel";
+import Asus from "../Pages/Asus/Asus";
 
 
 const myRoute = createBrowserRouter([
 
     {
-        path:"/",
+        path: "/",
         element: <MainLayout></MainLayout>,
-        errorElement:<ErrorPage></ErrorPage> ,
-        children:[
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
             {
                 path: "/",
-                element:<Home></Home>,
+                element: <Home></Home>,
             },
             {
                 path: "/product",
@@ -31,27 +36,46 @@ const myRoute = createBrowserRouter([
                 element: <MyCart></MyCart>
             },
             {
+                path:"/about",
+                element:<AboutUs></AboutUs>
+            },
+            {
                 path: "/login",
-                element:<Login></Login>
+                element: <Login></Login>
             },
             {
                 path: "/register",
-                element:<Register></Register>
+                element: <Register></Register>
             },
             {
-                path:"/apple",
-                element:<Apple></Apple>,
-                loader:()=> fetch('http://localhost:5000/products')
-
+                path: "/apple",
+                element: <Apple></Apple>
+               
             },
             {
                 path: "/sony",
-                element:<Sony></Sony>,
-                loader:()=> fetch('http://localhost:5000/products')
+                element: <Sony></Sony>
+                
+            },
+            {
+                path:"/samsung",
+                element:<Samsung></Samsung>
+            },
+            {
+                path:"/google",
+                element:<Google></Google>
+            },
+            {
+                path:"/intel",
+                element:<Intel></Intel>
+            },
+            {
+                path:"/asus",
+                element:<Asus></Asus>
             }
         ]
     },
-   
+
 ])
 
 export default myRoute;

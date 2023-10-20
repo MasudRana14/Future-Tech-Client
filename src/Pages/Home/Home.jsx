@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
 
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto bg-pink-100">
 
 
             <div className="mt-2">
@@ -33,83 +33,100 @@ const Home = () => {
                     {/* Card 1  */}
                     <Link to="/sony">
 
-                    <div className="card w-96  bg-gray-300 shadow-xl">
-                        <figure className="p-2">
-                            <img src="https://i.ibb.co/X8gGnZV/Sony.webp" alt="Shoes" className="rounded-xl" />
-                        </figure>
+                        <div className="card w-96  bg-gray-300 shadow-xl">
+                            <figure className="p-2">
+                                <img src="https://i.ibb.co/X8gGnZV/Sony.webp" alt="Shoes" className="rounded-xl" />
+                            </figure>
 
-                        <div>
-                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Sony</h1>
+                            <div>
+                                <h1 className="text-center text-2xl p-2 mb-2 font-bold">Sony</h1>
+                            </div>
+
                         </div>
-
-                    </div>
 
 
 
                     </Link>
                     {/* Card 2  */}
-                    
-                    <Link to="/apple">
-                    
-                    
-                    <div className="card w-96  bg-gray-300 shadow-xl">
-                        <figure className="p-2">
-                            <img src="https://i.ibb.co/qjqC8Pk/Apple.jpg" alt="Shoes" className="rounded-xl" />
-                        </figure>
 
-                        <div>
-                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Apple</h1>
+                    <Link to="/apple">
+
+
+                        <div className="card w-96  bg-gray-300 shadow-xl">
+                            <figure className="p-2">
+                                <img src="https://i.ibb.co/qjqC8Pk/Apple.jpg" alt="Shoes" className="rounded-xl" />
+                            </figure>
+
+                            <div>
+                                <h1 className="text-center text-2xl p-2 mb-2 font-bold">Apple</h1>
+                            </div>
+
                         </div>
 
-                    </div>
-                    
-                    
-                    
+
+
                     </Link>
                     {/* Card 3 */}
-                    <div className="card w-96  bg-gray-300 shadow-xl">
-                        <figure className="p-2">
-                            <img src="https://i.ibb.co/6XSXYYL/Samsung.jpg" alt="Shoes" className="rounded-xl" />
-                        </figure>
+                    <Link to="/samsung">
 
-                        <div>
-                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Samsung</h1>
+                        <div className="card w-96  bg-gray-300 shadow-xl">
+                            <figure className="p-2">
+                                <img src="https://i.ibb.co/6XSXYYL/Samsung.jpg" alt="Shoes" className="rounded-xl" />
+                            </figure>
+
+                            <div>
+                                <h1 className="text-center text-2xl p-2 mb-2 font-bold">Samsung</h1>
+                            </div>
+
                         </div>
 
-                    </div>
+
+                    </Link>
                     {/* Card 4 */}
-                    <div className="card w-96  bg-gray-300 shadow-xl">
-                        <figure className="p-2">
-                            <img src="https://i.ibb.co/BG43y7B/Google.jpg" alt="Shoes" className="rounded-xl" />
-                        </figure>
+                    <Link to="/google">
+                        <div className="card w-96  bg-gray-300 shadow-xl">
+                            <figure className="p-2">
+                                <img src="https://i.ibb.co/BG43y7B/Google.jpg" alt="Shoes" className="rounded-xl" />
+                            </figure>
 
-                        <div>
-                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Google</h1>
+                            <div>
+                                <h1 className="text-center text-2xl p-2 mb-2 font-bold">Google</h1>
+                            </div>
+
                         </div>
 
-                    </div>
+                    </Link>
                     {/* Card 5 */}
-                    <div className="card w-96  bg-gray-300 shadow-xl">
-                        <figure className="p-2">
-                            <img src="https://i.ibb.co/7v9Fhrh/Intel.jpg" alt="Shoes" className="rounded-xl" />
-                        </figure>
+                    <Link to="/intel">
 
-                        <div>
-                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Intel</h1>
+                        <div className="card w-96  bg-gray-300 shadow-xl">
+                            <figure className="p-2">
+                                <img src="https://i.ibb.co/7v9Fhrh/Intel.jpg" alt="Shoes" className="rounded-xl" />
+                            </figure>
+
+                            <div>
+                                <h1 className="text-center text-2xl p-2 mb-2 font-bold">Intel</h1>
+                            </div>
+
                         </div>
 
-                    </div>
+                    </Link>
                     {/* Card 6 */}
-                    <div className="card w-96  bg-gray-300 shadow-xl">
-                        <figure className="p-2">
-                            <img src="https://i.ibb.co/cbn969Z/Asus.jpg" alt="Shoes" className="rounded-xl" />
-                        </figure>
+                    <Link to="/asus">
 
-                        <div>
-                            <h1 className="text-center text-2xl p-2 mb-2 font-bold">Asus</h1>
+                        <div className="card w-96  bg-gray-300 shadow-xl">
+                            <figure className="p-2">
+                                <img src="https://i.ibb.co/cbn969Z/Asus.jpg" alt="Shoes" className="rounded-xl" />
+                            </figure>
+
+                            <div>
+                                <h1 className="text-center text-2xl p-2 mb-2 font-bold">Asus</h1>
+                            </div>
+
                         </div>
 
-                    </div>
+
+                    </Link>
 
                 </div>
             </div>
@@ -163,11 +180,11 @@ const Home = () => {
 
             {/* Why People Love Us Sections  */}
 
-            <section className="mb-12">
+            <section className=" mt-16 ">
 
                 <h1 className="text-3xl font-bold text-center text-pink-500">Why People <span className="text-cyan-500">Love Us</span></h1>
 
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="mb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
                     <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md w-52 rounded-xl bg-clip-border mx-auto">
                         <div className="p-6">
@@ -213,7 +230,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <div className="relative flex flex-col mt-6 text-gray-700 shadow-md w-52 rounded-xl bg-clip-border  mx-auto">
+                    <div className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md w-52 rounded-xl bg-clip-border  mx-auto">
                         <div className="p-6">
                             <img src="https://i.ibb.co/br8W6sK/fb4.jpg" alt="" />
 

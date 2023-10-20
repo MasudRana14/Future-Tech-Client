@@ -1,15 +1,14 @@
 
 
-const AppleProduct = ({ apples }) => {
+const GoogleProducts = ({google}) => {
 
-    
-
-    const { photo, name, brand, category, price, rating, description } = apples;
+    const { photo, name, brand, category, price, rating, description } = google;
 
     return (
+
         <div>
 
-    
+
             <div className=" ">
 
                 <div className=" gap-5">
@@ -37,7 +36,8 @@ const AppleProduct = ({ apples }) => {
 
             </div>
         </div>
+
     );
 };
 
-export default AppleProduct;
+export default GoogleProducts;

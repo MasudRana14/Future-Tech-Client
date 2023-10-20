@@ -1,26 +1,21 @@
-
-import AppleProduct from "./AppleProduct";
-import HeroSections from "../../HeroSection/HeroSections";
 import { useEffect, useState } from "react";
+import HeroSections from "../../HeroSection/HeroSections";
+import GoogleProducts from "./GoogleProducts";
 
 
+const Google = () => {
 
-const Apple = () => {
+
+    const [googleBrands, setGoogleBrand] = useState([])
 
 
-    const [appleBrands, setApple] = useState([])
-
-    
     useEffect(() => {
-        fetch('http://localhost:5000/products/Apple')
+        fetch('http://localhost:5000/products/Google')
             .then(res => res.json())
-            .then(data => setApple(data))
+            .then(data => setGoogleBrand(data))
     }, [])
 
-
-
     return (
-
         <div>
             <div className="mt-2">
                 <HeroSections></HeroSections>
@@ -32,7 +27,7 @@ const Apple = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12 mb-12 ">
 
                 {
-                    appleBrands.map(apples=> <AppleProduct key={apples._id} apples={apples}></AppleProduct>)
+                   googleBrands.map(google => <GoogleProducts key={google._id} google={google}></GoogleProducts>)
                 }
 
             </div>
@@ -41,4 +36,4 @@ const Apple = () => {
     );
 };
 
-export default Apple;
+export default Google;

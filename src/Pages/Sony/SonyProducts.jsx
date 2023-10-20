@@ -1,8 +1,8 @@
 
 
-const SonyProducts = ({ sony }) => {
+const SonyProducts = ({ sonys }) => {
 
-    const { photo, name, brand, category, price, rating, description } = sony;
+    const { photo, name, brand, category, price, rating, description } = sonys;
 
     return (
         <div>

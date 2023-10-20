@@ -1,26 +1,23 @@
-
-import AppleProduct from "./AppleProduct";
-import HeroSections from "../../HeroSection/HeroSections";
 import { useEffect, useState } from "react";
+import HeroSections from "../../HeroSection/HeroSections";
+import IntelProduct from "./IntelProduct";
 
 
+const Intel = () => {
 
-const Apple = () => {
 
-
-    const [appleBrands, setApple] = useState([])
+    
+    const [intelBrands, setIntelBrand] = useState([])
 
     
     useEffect(() => {
-        fetch('http://localhost:5000/products/Apple')
+        fetch('http://localhost:5000/products/Intel')
             .then(res => res.json())
-            .then(data => setApple(data))
+            .then(data => setIntelBrand(data))
     }, [])
 
 
-
     return (
-
         <div>
             <div className="mt-2">
                 <HeroSections></HeroSections>
@@ -32,7 +29,7 @@ const Apple = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12 mb-12 ">
 
                 {
-                    appleBrands.map(apples=> <AppleProduct key={apples._id} apples={apples}></AppleProduct>)
+                   intelBrands.map(intel=> <IntelProduct key={intel._id} intel={intel}></IntelProduct>)
                 }
 
             </div>
@@ -41,4 +38,4 @@ const Apple = () => {
     );
 };
 
-export default Apple;
+export default Intel;
