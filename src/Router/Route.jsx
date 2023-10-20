@@ -14,6 +14,7 @@ import Samsung from "../Pages/Samsung/Samsung";
 import Google from "../Pages/Google/Google";
 import Intel from "../Pages/Intel/Intel";
 import Asus from "../Pages/Asus/Asus";
+import Contact from "../Pages/Contact/Contact";
 
 
 
@@ -51,31 +52,35 @@ const myRoute = createBrowserRouter([
             },
             {
                 path: "/apple",
-                element: <Apple></Apple>
+                element: <PrivateRoute><Apple></Apple></PrivateRoute>
                
             },
             {
                 path: "/sony",
-                element: <Sony></Sony>,
+                element: <PrivateRoute><Sony></Sony></PrivateRoute>
                 
                 
             },
             {
                 path:"/samsung",
-                element:<Samsung></Samsung>
+                element:<PrivateRoute><Samsung></Samsung></PrivateRoute>
             },
             {
                 path:"/google",
-                element:<Google></Google>
+                element:<PrivateRoute><Google></Google></PrivateRoute>
             },
             {
                 path:"/intel",
-                element:<Intel></Intel>
+                element:<PrivateRoute><Intel></Intel></PrivateRoute>
             },
             {
                 path:"/asus",
-                element:<Asus></Asus>
+                element:<PrivateRoute><Asus></Asus></PrivateRoute>
             },
+            {
+                path:"/contact",
+                element:<PrivateRoute><Contact></Contact></PrivateRoute>
+            }
            
            
         ]

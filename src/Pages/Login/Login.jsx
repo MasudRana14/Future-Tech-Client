@@ -66,7 +66,7 @@ const handleLogin = e =>{
                         </div>
 
                       <div className="w-full text-center bg-blue-600 text-white rounded-2xl p-2 font-medium hover:cursor-pointer hover:bg-lime-700">
-                      <input type="submit" value="Login to your account" />
+                      <input className="hover:cursor-pointer" type="submit" value="Login to your account" />
                       </div>
 
                         <div className="text-sm font-medium text-gray-500 dark:text-gray-300">

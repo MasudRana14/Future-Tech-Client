@@ -59,7 +59,10 @@ const AddProduct = () => {
                                 <span className="label-text">Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="name" placeholder="Product Name" className="input input-bordered w-full" />
+
+                                <input type="text" name="name" required placeholder="Product Name" 
+
+                                className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -69,7 +72,7 @@ const AddProduct = () => {
                                 <span className="label-text">Brand Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="brand" placeholder="Product Brand Name" className="input input-bordered w-full" />
+                                <input type="text" name="brand" required placeholder="Product Brand Name" className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -85,7 +88,7 @@ const AddProduct = () => {
                                 <span className="label-text">Price</span>
                             </label>
                             <label className="input-group">
-                                <input type="number" name="price" placeholder="Product Price" className="input input-bordered w-full" />
+                                <input type="number" name="price" required placeholder="Product Price" className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -94,7 +97,7 @@ const AddProduct = () => {
                                 <span className="label-text">Photo URL</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="photo" placeholder=" Product Photo URL" className="input input-bordered w-full" />
+                                <input type="text" name="photo" required placeholder=" Product Photo URL" className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -111,7 +114,7 @@ const AddProduct = () => {
                                 <span className="label-text">Category</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="category" placeholder="Product Category" className="input input-bordered w-full" />
+                                <input type="text" name="category" required placeholder="Product Category" className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -121,7 +124,7 @@ const AddProduct = () => {
                                 <span className="label-text">Rating</span>
                             </label>
                             <label className="input-group">
-                                <input type="number" name="rating" placeholder="Product Rating" className="input input-bordered w-full" />
+                                <input type="number" name="rating" required placeholder="Product Rating" className="input input-bordered w-full" />
                             </label>
                         </div>
 
@@ -138,14 +141,14 @@ const AddProduct = () => {
                                 <span className="label-text">Short description</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="description" placeholder=" Product Short description" className="input input-bordered w-full" />
+                                <input type="text" name="description" required placeholder=" Product Short description" className="input input-bordered w-full" />
                             </label>
                         </div>
 
                     </div>
 
                     <div className="mt-5">
-                        <input className="btn btn-block bg-green-500 hover:bg-blue-500" type="submit" value="Add Product" />
+                        <input className="btn btn-block font-bold bg-green-600 hover:bg-blue-400" type="submit" value="Add Product" />
                     </div>
 
                 </form>

@@ -22,9 +22,9 @@ const IntelProduct = ({ intel }) => {
                             <p className="mt-2 font-medium">Reating: {rating}</p>
                             <p className="mt-2 font-medium">{description}</p>
                             <div className="card-actions mt-2">
-                                <button className="btn btn-sm bg-cyan-400 hover:bg-pink-400 ">Update</button>
+                                <button className="btn btn-sm font-bold bg-cyan-400 hover:bg-green-400 ">Update</button>
 
-                                <button className="btn btn-sm bg-pink-400 hover:bg-cyan-400 ">Details</button>
+                                <button className="btn btn-sm font-bold bg-pink-400 hover:bg-lime-600 ">Details</button>
                             </div>
                         </div>
                     </div>
