@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -12,24 +13,24 @@ const Footer = () => {
                     <h1 className="text-2xl font-bold text-cyan-500 ">Future <span className="text-pink-500">Tech</span></h1>
                 </aside>
                 <nav>
-                    <header className="footer-title">Menu</header>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <header className="footer-title font-bold">Menu</header>
+                    <a className="link link-hover font-bold">Branding</a>
+                    <a className="link link-hover font-bold">Design</a>
+                    <a className="link link-hover font-bold">Marketing</a>
+                    <a className="link link-hover font-bold">Advertisement</a>
                 </nav>
                 <nav>
                     <header className="footer-title">Contact</header>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <Link to="/about" className="link link-hover font-bold">About us</Link>
+                    <Link to="/contact" className="link link-hover font-bold">Contact</Link>
+                    <Link to="/mycart" className="link link-hover font-bold">My Cart</Link>
+                    <Link to="/product" className="link link-hover font-bold">Add Product</Link>
                 </nav>
                 <nav>
-                    <header className="footer-title">Helpful Links</header>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <header className="footer-title font-bold">Helpful Links</header>
+                    <a className="link link-hover font-bold">Terms of use</a>
+                    <a className="link link-hover font-bold">Privacy policy</a>
+                    <a className="link link-hover font-bold">Cookie policy</a>
                 </nav>
             </footer>
         </div>
