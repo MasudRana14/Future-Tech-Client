@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const GoogleProducts = ({google}) => {
 
-    const { photo, name, brand, category, price, rating, description } = google;
+    const { _id, photo, name, brand, category, price, rating, description } = google;
 
     return (
 
@@ -23,7 +24,8 @@ const GoogleProducts = ({google}) => {
                             <p className="mt-2 font-medium">Reating: {rating}</p>
                             <p className="mt-2 font-medium">{description}</p>
                             <div className="card-actions mt-2">
-                                <button className="btn btn-sm font-bold bg-cyan-400 hover:bg-green-400 ">Update</button>
+                               
+                               <Link to={`/update/${_id}`}> <button className="btn btn-sm font-bold bg-cyan-400 hover:bg-green-400 ">Update</button></Link>
 
                                 <button className="btn btn-sm font-bold bg-pink-400 hover:bg-lime-600 ">Details</button>
                             </div>

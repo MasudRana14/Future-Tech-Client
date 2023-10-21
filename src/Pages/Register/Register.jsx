@@ -14,6 +14,7 @@ const navigate = useNavigate();
 
 const handleRegister = e=>{
     e.preventDefault();
+    setErrorRegister('')
    const form = new FormData(e.currentTarget);
    const name = form.get('name');
    const email = form.get('email');
@@ -21,15 +22,21 @@ const handleRegister = e=>{
    const password = form.get('password');
   
     
-     // User Register 
-  createUser(email,password)
-  .then(result =>{
-    swal("Good job!", "Register Successfully", "success");
-  })
-  navigate("/")
-  .catch(error =>{
-    setErrorRegister(error.message)
-  })
+    
+   if(password.length )
+
+   // User Register 
+   createUser(email, password)
+       .then(result => {
+           console.log(result.user)
+           swal("Good job!", "Register Successfully", "success");
+          
+       })
+       navigate("/")
+       .catch(error => {
+          setErrorRegister(error.message)
+         
+       })
 
 
 }

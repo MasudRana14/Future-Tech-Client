@@ -6,7 +6,7 @@ import swal from "sweetalert";
 
 const Login = () => {
 
-const {signIn} = useContext(AuthContext)
+const {signIn, googleLogin } = useContext(AuthContext)
 const [errorAlert, setErrorAlert] = useState()
 const location = useLocation()
 const changeNavigate = useNavigate('')
@@ -26,6 +26,19 @@ const handleLogin = e =>{
     .catch(error =>{
         setErrorAlert(error.message)
     })
+
+
+
+    // googleLogin(email,password)
+    // .then(result =>{
+    //     swal("Good job!", "Login Successfully", "success");
+    //     changeNavigate(location?.state ? location.state : "/")
+    // })
+    // .catch(error =>{
+    //     setErrorAlert(error.message)
+    // })
+
+
 }
 
 
@@ -62,16 +75,22 @@ const handleLogin = e =>{
                                 </div>
                                 <label className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                             </div>
-                            <a href="#" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+                            <a href="#" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Forget Password</a>
                         </div>
 
                       <div className="w-full text-center bg-blue-600 text-white rounded-2xl p-2 font-medium hover:cursor-pointer hover:bg-lime-700">
                       <input className="hover:cursor-pointer" type="submit" value="Login to your account" />
                       </div>
 
+                      <div className="w-full text-center bg-amber-600 text-white rounded-2xl p-2 font-medium hover:cursor-pointer hover:bg-cyan-600">
+                            <button onClick={googleLogin }>Google Login</button>
+                        </div>
+
                         <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                             Not registered? <Link to="/register" className="text-blue-700 hover:underline dark:text-blue-500">Create account</Link>
                         </div>
+
+                       
                     </form>
                 </div>
 
