@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import swal from "sweetalert";
+import Swal from "sweetalert2";
 
 
 const Register = () => {
@@ -21,26 +22,38 @@ const handleRegister = e=>{
    const photo = form.get('photo');
    const password = form.get('password');
   
+//    if (!/(?=.*[A-Za-z])(?=.*\d)]{7,12}$/.test(password))
     
-    
-   if(password.length )
+   if (!password.length<6){
 
-   // User Register 
-   createUser(email, password)
-       .then(result => {
-           console.log(result.user)
-           swal("Good job!", "Register Successfully", "success");
-          
-       })
-       navigate("/")
-       .catch(error => {
-          setErrorRegister(error.message)
-         
-       })
+//     Swal.fire({
+//         icon: 'error',
+//         title: 'Oops...',
+//         text: 'Something went wrong!',
+//         footer: '<a href="">Why do I have this issue?</a>'
+//       })
+//       return
 
+//    }else{
+    createUser(email, password)
+    .then(result => {
+        console.log(result.user)
+        swal("Good job!", "Register Successfully", "success");
+        navigate("/")
+    })
+   
+    .catch(error => {
+    //    setErrorRegister(error.message)
+       swal("Oops..!", `${error.message}`, "error");
+    })
+   
 
 }
 
+   }
+
+   // User Register 
+  
 
     return (
         <div className="">
@@ -53,11 +66,11 @@ const handleRegister = e=>{
 
                     <form onSubmit={handleRegister} className="space-y-6" action="#">
                         <h5 className="text-xl font-medium text-gray-900 dark:text-white">Register Now</h5>
-                        <div>
+                        {/* <div>
                                 {
                                     errorRegister && <h1 className="text-red-600 text-center mb-2">{errorRegister}</h1>
                                 }
-                            </div>
+                            </div> */}
                         <div>
                             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
                             <input type="text" name="name"  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Name" required />
