@@ -19,7 +19,7 @@ const Apple = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/products/Apple')
+        fetch('https://assignment-10-server-beige-mu.vercel.app/products/Apple')
             .then(res => res.json())
             .then(data => setApple(data))
     }, [])

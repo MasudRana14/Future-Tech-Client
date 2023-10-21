@@ -13,7 +13,7 @@ const location = useLocation();
 
 if(loader){
     return < div className="flex justify-center mx-auto">
-        <span className="loading loading-spinner text-success"></span>
+        <span className="loading loading-spinner text-success w-20"></span>
     </div>
 }
 

@@ -18,7 +18,7 @@ const Google = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/products/Google')
+        fetch('https://assignment-10-server-beige-mu.vercel.app/products/Google')
             .then(res => res.json())
             .then(data => setGoogleBrand(data))
     }, [])

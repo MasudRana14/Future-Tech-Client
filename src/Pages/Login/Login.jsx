@@ -29,18 +29,19 @@ const handleLogin = e =>{
 
 
 
-    // googleLogin(email,password)
-    // .then(result =>{
-    //     swal("Good job!", "Login Successfully", "success");
-    //     changeNavigate(location?.state ? location.state : "/")
-    // })
-    // .catch(error =>{
-    //     setErrorAlert(error.message)
-    // })
+    googleLogin(email,password)
+    .then(result =>{
+        changeNavigate(location?.state ? location.state : "/")
+        swal("Good job!", "Login Successfully", "success")
+       
+    })
+    
+    .catch(error =>{
+        setErrorAlert(error.message)
+    })
 
 
 }
-
 
 
 

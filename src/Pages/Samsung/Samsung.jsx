@@ -18,7 +18,7 @@ const Samsung = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/products/Samsung')
+        fetch('https://assignment-10-server-beige-mu.vercel.app/products/Samsung')
             .then(res => res.json())
             .then(data => setSamsungBrand(data))
     }, [])

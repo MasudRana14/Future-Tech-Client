@@ -18,7 +18,7 @@ const Intel = () => {
 
     
     useEffect(() => {
-        fetch('http://localhost:5000/products/Intel')
+        fetch('https://assignment-10-server-beige-mu.vercel.app/products/Intel')
             .then(res => res.json())
             .then(data => setIntelBrand(data))
     }, [])

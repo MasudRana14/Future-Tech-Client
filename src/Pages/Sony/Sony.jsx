@@ -19,7 +19,7 @@ const Sony = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/products/Sony')
+        fetch('https://assignment-10-server-beige-mu.vercel.app/products/Sony')
             .then(res => res.json())
             .then(data => setSonyBrand(data))
     }, [])
