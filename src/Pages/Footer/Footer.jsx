@@ -12,6 +12,7 @@ const Footer = () => {
                     </div>
                     <h1 className="text-2xl font-bold text-cyan-500 ">Future <span className="text-pink-500">Tech</span></h1>
                 </aside>
+
                 <nav>
                     <header className="footer-title font-bold">Menu</header>
                     <a className="link link-hover font-bold">Branding</a>
@@ -26,12 +27,14 @@ const Footer = () => {
                     <Link to="/mycart" className="link link-hover font-bold">My Cart</Link>
                     <Link to="/product" className="link link-hover font-bold">Add Product</Link>
                 </nav>
+                
                 <nav>
                     <header className="footer-title font-bold">Helpful Links</header>
                     <a className="link link-hover font-bold">Terms of use</a>
                     <a className="link link-hover font-bold">Privacy policy</a>
                     <a className="link link-hover font-bold">Cookie policy</a>
                 </nav>
+
             </footer>
         </div>
     );
