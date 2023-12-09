@@ -41,14 +41,17 @@ const NavBar = () => {
 
         {/* My Cart */}
 
-        <NavLink
-            to="/mycart"
-            className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-cyan-500 underline" : ""
-            }
-        >
-            <p className="font-bold">My Cart</p>
-        </NavLink>
+        {
+            user &&
+         <NavLink
+                to="/mycart"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-cyan-500 underline" : ""
+                }
+            >
+                <p className="font-bold">My Cart</p>
+            </NavLink>
+        }
 
         {/* About Us  */}
         <NavLink
