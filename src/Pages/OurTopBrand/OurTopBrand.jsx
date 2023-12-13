@@ -22,9 +22,9 @@ const OurTopBrand = () => {
                             </div>
                             <div className="relative p-6 px-6 py-14 md:px-12">
                                 <p className="block font-sans text-xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-                                    Photo Contest
+                                   HP
                                 </p>
-                                <p className="text-white">Coming: 2024</p>
+                              
                             </div>
                         </div>
 
@@ -36,9 +36,9 @@ const OurTopBrand = () => {
                             </div>
                             <div className="relative p-6 px-6 py-14 md:px-12">
                                 <p className="block font-sans text-xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-                                    Coding Contest
+                                    APPLE
                                 </p>
-                                <p className="text-white">Coming : 1-Jan-2024</p>
+                               
                             </div>
                         </div>
 
@@ -50,9 +50,9 @@ const OurTopBrand = () => {
                             </div>
                             <div className="relative p-6 px-6 py-14 md:px-12">
                                 <p className="block font-sans text-xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-                                    Creative Canvas Contest
+                                    MICROSOFT
                                 </p>
-                                <p className="text-white">Coming: 13-Feb-2024</p>
+                                
                             </div>
                         </div>
 
@@ -64,10 +64,10 @@ const OurTopBrand = () => {
                             </div>
                             <div className="relative p-6 px-6 py-14 md:px-12">
                                 <p className="block font-sans text-xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-                                    Fitness Frenzy
+                                   SAMSUNG
                                 </p>
 
-                                <p className="text-white">Coming: 13-Mar-2024</p>
+                               
                             </div>
                         </div>
 
@@ -79,10 +79,10 @@ const OurTopBrand = () => {
                             </div>
                             <div className="relative p-6 px-6 py-14 md:px-12">
                                 <p className="block font-sans text-xl font-medium leading-[1.5] tracking-normal text-white antialiased">
-                                    Innovation Challenge
+                                    GIGABYTE
                                 </p>
 
-                                <p className="text-white">Coming: 14-Feb-2024</p>
+                               
                             </div>
                         </div>
 
