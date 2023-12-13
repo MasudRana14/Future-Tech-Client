@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import OurGallery from "../OurGallery/OurGallery";
+import OurTopBrand from "../OurTopBrand/OurTopBrand";
 
 
 
@@ -131,6 +133,15 @@ const Home = () => {
                 </div>
             </div>
 
+
+
+            {/* Top Brand  */}
+            <section>
+                        <OurTopBrand></OurTopBrand>
+            </section>
+
+
+
             {/* FEATURED Brand Sections */}
 
             <section className="mt-20 ">
@@ -245,6 +256,16 @@ const Home = () => {
 
                 </div>
 
+            </section>
+
+
+
+
+
+            {/* Our Gallery  */}
+
+            <section className="mb-10">
+                <OurGallery></OurGallery>
             </section>
 
 
